@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn React: Get Started</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+  </head>
+  <body>
+    <div id="root"><h1>Hello!</h1></div>
+
+<script type="text/javascript">
+console.log(React, ReactDOM, document.getElementById("root"))
+// 1. Use React.createElement to create an h1 element
+// 2. Use ReactDOM.render to render the h1 to our DOM node
+//    * Yeah, "Hello!" should dissapear
+// 3. We can provide a second argument to solve this.
+//    * This object cointaines all of the properties for our new element
+//    * We can use the property `children` to define the child element,
+//      innerText in this case.
+// 4. We can delete the original text, now that we know it's working.
+</script>
+  </body>
+</html>

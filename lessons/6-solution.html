@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn React: Get Started</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+<script type="text/babel">
+const Greeting = props =>
+  <h1>
+    Hello <em>{props.name}</em>!
+  </h1>
+
+ReactDOM.render(<Greeting name="Bulbasaur" />, document.getElementById("root"))
+</script>
+  </body>
+</html>

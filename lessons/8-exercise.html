@@ -11,6 +11,16 @@
     <div id="root"></div>
 
 <script type="text/babel">
+// 1. Observe the fact that we made the creacted a *very* specific component
+// 2. Attempt to solve it by "drilling prop holes". Talk about `this` in clases
+//    This is wrong
+// 3. Rename `GreetingClickCounter` to generic `ClickCounter`
+// 4. Open `ClickCounter` at the call site and move <Greeting .../> there
+//    Now we just see the ClickCounter. explain why. jump back to the Babel repl
+// 5. Observe that <Greeting .../> is just `children` and `children` is just a prop
+// 6. Add {this.children} to ClickCounter. Demo that it can now be literally anything
+// 7. Change name to "Bulbasaur" to prove it all works
+
 const Greeting = props =>
   <h1>
     Hello <em>{props.name}</em>!
@@ -20,7 +30,7 @@ class GreetingWithClickCounter extends React.Component {
   render() {
     return (
       <div>
-        <Greeting name="Bulbasaur" />
+        <Greeting name="Charmander" />
         (clicks: 0)
       </div>
     )

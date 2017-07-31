@@ -5,12 +5,16 @@
     <title>Learn React: Get Started</title>
     <script src="https://unpkg.com/react@latest/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <!-- 1. Add babel-standalone for JSX support. -->
   </head>
   <body>
     <div id="root"></div>
 
+<!-- 2. Change "text/javascript" to "text/babel"
 <script type="text/javascript">
 ReactDOM.render(
+  // 3. Rewrite createElement calls to use JSX
+  // 4. Visit babeljs.io/repl to demonstrate what's happening
   React.createElement(
     "h1",
     {},
